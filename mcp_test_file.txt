@@ -1,0 +1,2 @@
+# Simple test file to check GitHub MCP write access
+This is a test file to verify that the MCP integration can create or update files in the repository.

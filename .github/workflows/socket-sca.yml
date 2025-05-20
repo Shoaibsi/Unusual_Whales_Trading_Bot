@@ -1,0 +1,17 @@
+name: Socket SCA
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  socket-sca:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Socket SCA
+        uses: SocketDev/socket-action@v1
+        with:
+          project-token: ${{ secrets.SOCKET_TOKEN }}
